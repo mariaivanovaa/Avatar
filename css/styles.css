@@ -1,0 +1,191 @@
+body{
+    font-family: 'Inter';
+font-style: normal;}
+p, ul, h1, h2{
+    padding: 0 ;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.content{
+    width: 1032px;
+}
+/* header */
+
+.header-main-image{
+    width: 186px;
+height: 72px;
+}
+
+.nav-text{
+    font-weight: 300;
+font-size: 20px;
+line-height: 1.20;
+text-align: justify;
+color: #FFFFFF;
+}
+
+.header-button{
+    width: 141px;
+    height: 41.69px;
+    font-family: 'HeadlandOne';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.25;
+text-align: justify;
+text-align: center;
+color: #26C6EA;
+border-radius: 35px 0;
+border: 2px solid #26C7EA;
+background-color: #0B0E66;
+}
+
+.header-text-eng{
+    font-family: 'Hammersmith One';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height:1.25;
+text-align: center;
+color: #FFFFFF;
+}
+
+.header-img{
+    width: 36px;
+height: 20px;
+}
+
+.header-text-ua{
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:1.25;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* hero */
+
+.hero-left{
+    font-weight: 400;
+font-size: 20px;
+line-height: 1.20;
+color: #FFFFFF;
+}
+ 
+.hero-button{
+    font-family: 'HeadlandOne';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 1.25;
+text-align: center;
+color: #26C7EA;
+border-radius: 45px 0;
+border: 3px solid #26C7EA;
+background-color: #0B0E66;
+width: 260px;
+height: 80px;
+}
+
+.blockquote{
+    font-weight: 400;
+font-size: 36px;
+line-height:1.22;
+text-align: justify;
+text-align: center;
+color: #0A3853;
+}
+
+.author{
+    font-weight: 400;
+font-size: 24px;
+line-height: 1.08;
+text-align: justify;
+text-align: center;
+color: #000000;
+}
+
+.trailer-button{
+    font-family: 'HeadlandOne';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 1.25;
+text-align: justify;
+text-align: center;
+border-radius: 45px 0;
+color: #26C7EA;
+border: 3px solid #26C7EA;
+background-color: #0B0E66;
+width: 260px;
+height: 80px;
+}
+
+/* knowlege */
+
+.knowlege-title{
+    font-family: 'HeadlandOne';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 1.25;
+text-align: justify;
+color: #141414;
+}
+
+.knowledge-text-ua{
+    font-family: 'HeadlandOne';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 1.00;
+text-align: justify;
+color: #141414;
+}
+
+.knowledge-text-navi{
+    font-family: 'HeadlandOne';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height:1.00;
+text-align: justify;
+color: #000000;
+}
+
+/* footer */
+
+.footer-logo{
+    width: 183px;
+height: 70px;
+}
+
+.answeres{
+    width: 665px;
+    color: #FFFFFF;
+}
+
+.Cooperation{
+    width: 689px;
+    color: #FFFFFF;
+}
+
+.TheWayOfWater{
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.21;
+text-align: justify;
+color: #FFFFFF;
+}
