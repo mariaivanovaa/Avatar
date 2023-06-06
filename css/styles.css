@@ -20,12 +20,49 @@ a{
     width: 1032px;
 }
 /* header */
+.header{
+    display: flex;
+    width: 1440px;
+   background-image: 
+  
+   url(../images/header.jpg);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #FFFFFF;
 
-.header-main-image{
+
+}
+.header-main{
+    display: flex;
+    width: 1032px;
+    padding-left: 204px;
+    justify-content: space-between;
+}
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    width: 297px;
+}
+.header-right-list{
+    display: flex;
+    justify-content: space-between;
+    width: 107px;
+    padding: 65px 0 48px 0;
+    margin: 0 48px;
+}
+.header-main-img{
     width: 186px;
 height: 72px;
-}
+margin: 39px 0;
 
+}
+.nav-list{
+    display: flex;
+    width: 325px;
+    justify-content: space-between;
+    padding: 63px 0
+}
 .nav-text{
     font-weight: 300;
 font-size: 20px;
@@ -48,6 +85,7 @@ color: #26C6EA;
 border-radius: 35px 0;
 border: 2px solid #26C7EA;
 background-color: #0B0E66;
+margin: 54px 0;
 }
 
 .header-text-eng{
@@ -77,13 +115,50 @@ height: 20px;
 
 /* hero */
 
+.hero{
+    display: flex;
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+height: 740px;
+}
+
 .hero-left{
     font-weight: 400;
 font-size: 20px;
 line-height: 1.20;
 color: #FFFFFF;
+padding: 180px 606px 179px 204px;
+}
+
+.hero-text-navi{
+    width: 298px;
+height: 96px;
+}
+
+.hero-text-ua::before{
+    content: '';
+background-image: url(../images/vector-hero.svg);
+width: 152px;
+height: 40px;
+}
+
+.hero-text-ua{
+    width: 376px;
+height: 123px
 }
  
+.hero-right{
+    
+    width: 50px;
+height: 141px;
+padding: 300px 204px 299px 0;
+}
+
+
+
 .hero-button{
     font-family: 'HeadlandOne';
 font-style: normal;
@@ -99,6 +174,12 @@ width: 260px;
 height: 80px;
 }
 
+.section-blockquote{
+    width: 1440px;
+height: 350px;
+
+}
+
 .blockquote{
     font-weight: 400;
 font-size: 36px;
@@ -106,6 +187,10 @@ line-height:1.22;
 text-align: justify;
 text-align: center;
 color: #0A3853;
+text-align: center;
+padding: 123px 219px 16px 219px;
+width: 1002px;
+margin: 0 auto;
 }
 
 .author{
@@ -115,25 +200,48 @@ line-height: 1.08;
 text-align: justify;
 text-align: center;
 color: #000000;
+
+}
+
+/* trailer */
+
+.trailer{
+    background-image: url(../images/trailer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+height: 741px;
 }
 
 .trailer-button{
     font-family: 'HeadlandOne';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 1.25;
-text-align: justify;
-text-align: center;
-border-radius: 45px 0;
-color: #26C7EA;
-border: 3px solid #26C7EA;
-background-color: #0B0E66;
-width: 260px;
-height: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: justify;
+    text-align: center;
+    border-radius: 45px 0;
+    color: #26C7EA;
+    border: 3px solid #26C7EA;
+    background-color: #0B0E66;
+    width: 260px;
+    height: 80px;
+    margin: 355px 610px 355px 610px;
+    padding: 0;
 }
 
-/* knowlege */
+/* knowledge */
+
+.knowledge{
+    background-image: url(../images/knowledge.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+height: 704px;
+}
 
 .knowlege-title{
     font-family: 'HeadlandOne';
@@ -166,6 +274,17 @@ color: #000000;
 }
 
 /* footer */
+
+.footer{
+    background-image: 
+    url(../images/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+height: 223px;
+    
+}
 
 .footer-logo{
     width: 183px;
