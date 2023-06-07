@@ -1,220 +1,243 @@
-body{
+body {
     font-family: 'Inter';
-font-style: normal;}
-p, ul, h1, h2{
-    padding: 0 ;
+    font-style: normal;
+}
+
+p,
+ul,
+h1,
+h2 {
+    padding: 0;
     margin: 0;
 }
 
-ul{
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
-    width: 1440px;
+
+.container {
     margin: 0 auto;
 }
-.content{
-    width: 1032px;
-}
+
 /* header */
-.header{
+
+.header {
     display: flex;
-    width: 1440px;
-   background-image: 
-  
-   url(../images/header.jpg);
-   background-size: cover;
+    background-image: linear-gradient(to top, rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../images/header.jpg);
+    /* background-image: url(../images/header.jpg); */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 3px solid #FFFFFF;
-
-
+    justify-content: space-between;
 }
-.header-main{
+
+.header-main {
     display: flex;
-    width: 1032px;
     padding-left: 204px;
     justify-content: space-between;
+    width: 100%;
 }
-.header-right{
-    display: flex;
-    justify-content: space-between;
-    width: 297px;
+
+.nav-list-item {
+    margin-right: 10px;
 }
-.header-right-list{
+
+.nav-list-item:last-child {
+    margin-right: 0;
+}
+
+.header-right-item {
+    margin-right: 10px;
+}
+
+.header-right-item:last-child {
+    margin-right: 0;
+}
+
+.header-right {
     display: flex;
-    justify-content: space-between;
-    width: 107px;
-    padding: 65px 0 48px 0;
+    align-items: center;
     margin: 0 48px;
 }
-.header-main-img{
-    width: 186px;
-height: 72px;
-margin: 39px 0;
+
+.header-right-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-img {
+    height: 72px;
+    margin: 39px 0;
 
 }
-.nav-list{
+
+.nav-list {
     display: flex;
-    width: 325px;
     justify-content: space-between;
     padding: 63px 0
 }
-.nav-text{
+
+.nav-text {
     font-weight: 300;
-font-size: 20px;
-line-height: 1.20;
-text-align: justify;
-color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.20;
+    text-align: justify;
+    color: #FFFFFF;
 }
 
-.header-button{
-    width: 141px;
-    height: 41.69px;
+.header-button {
     font-family: 'HeadlandOne';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 1.25;
-text-align: justify;
-text-align: center;
-color: #26C6EA;
-border-radius: 35px 0;
-border: 2px solid #26C7EA;
-background-color: #0B0E66;
-margin: 54px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: justify;
+    text-align: center;
+    color: #26C6EA;
+    border-radius: 35px 0;
+    border: 2px solid #26C7EA;
+    background-color: #0B0E66;
+    margin: 54px 0;
+    padding: 10px 40px;
 }
 
-.header-text-eng{
-    font-family: 'Hammersmith One';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height:1.25;
-text-align: center;
-color: #FFFFFF;
-}
-
-.header-img{
-    width: 36px;
-height: 20px;
-}
-
-.header-text-ua{
+.header-text-eng {
     font-family: 'Hammersmith One';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height:1.25;
+    line-height: 1.25;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header-img {
+    width: 36px;
+    height: 20px;
+}
+
+.header-text-ua {
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
     text-align: center;
     color: #FFFFFF;
 }
 
 /* hero */
 
-.hero{
+.hero {
     display: flex;
     background-image: url(../images/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 1440px;
-height: 740px;
+    height: 740px;
 }
 
-.hero-left{
+.hero-left {
     font-weight: 400;
-font-size: 20px;
-line-height: 1.20;
-color: #FFFFFF;
-padding: 180px 606px 179px 204px;
+    font-size: 20px;
+    line-height: 1.20;
+    color: #FFFFFF;
+    padding: 180px 606px 179px 204px;
 }
 
-.hero-text-navi{
+.hero-text-navi {
     width: 298px;
-height: 96px;
 }
 
-.hero-text-ua::before{
+.hero-text-ua::before {
     content: '';
-background-image: url(../images/vector-hero.svg);
-width: 152px;
-height: 40px;
+    display: block;
+    background-image: url(../images/vector-hero.svg);
+    background-repeat: no-repeat;
+    padding: 20px;
 }
 
-.hero-text-ua{
+.hero-text-ua {
     width: 376px;
-height: 123px
 }
- 
-.hero-right{
-    
+
+.hero-right {
+
     width: 50px;
-height: 141px;
-padding: 300px 204px 299px 0;
+    height: 141px;
+    padding: 300px 204px 299px 0;
 }
 
+.hero-list-item {
+    margin-bottom: 24px;
+}
 
+.hero-list-item:last-child {
+    margin-bottom: 0;
+}
 
-.hero-button{
+.hero-button {
     font-family: 'HeadlandOne';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 1.25;
-text-align: center;
-color: #26C7EA;
-border-radius: 45px 0;
-border: 3px solid #26C7EA;
-background-color: #0B0E66;
-width: 260px;
-height: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: #26C7EA;
+    border-radius: 45px 0;
+    border: 3px solid #26C7EA;
+    background-color: #0B0E66;
+    padding: 10px 30px;
+    margin-top: 42px;
 }
 
-.section-blockquote{
+.section-blockquote {
     width: 1440px;
-height: 350px;
+    height: 350px;
 
 }
 
-.blockquote{
+.blockquote {
     font-weight: 400;
-font-size: 36px;
-line-height:1.22;
-text-align: justify;
-text-align: center;
-color: #0A3853;
-text-align: center;
-padding: 123px 219px 16px 219px;
-width: 1002px;
-margin: 0 auto;
+    font-size: 36px;
+    line-height: 1.22;
+    text-align: justify;
+    text-align: center;
+    color: #0A3853;
+    text-align: center;
+    padding: 123px 219px 16px 219px;
+    width: 1002px;
+    margin: 0 auto;
 }
 
-.author{
+.author {
     font-weight: 400;
-font-size: 24px;
-line-height: 1.08;
-text-align: justify;
-text-align: center;
-color: #000000;
+    font-size: 24px;
+    line-height: 1.08;
+    text-align: justify;
+    text-align: center;
+    color: #000000;
 
 }
 
 /* trailer */
 
-.trailer{
+.trailer {
     background-image: url(../images/trailer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 1440px;
-height: 741px;
+    height: 741px;
 }
 
-.trailer-button{
+.trailer-button {
     font-family: 'HeadlandOne';
     font-style: normal;
     font-weight: 400;
@@ -234,77 +257,77 @@ height: 741px;
 
 /* knowledge */
 
-.knowledge{
+.knowledge {
     background-image: url(../images/knowledge.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 1440px;
-height: 704px;
+    height: 704px;
 }
 
-.knowlege-title{
+.knowlege-title {
     font-family: 'HeadlandOne';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 1.25;
-text-align: justify;
-color: #141414;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: justify;
+    color: #141414;
 }
 
-.knowledge-text-ua{
+.knowledge-text-ua {
     font-family: 'HeadlandOne';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 1.00;
-text-align: justify;
-color: #141414;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.00;
+    text-align: justify;
+    color: #141414;
 }
 
-.knowledge-text-navi{
+.knowledge-text-navi {
     font-family: 'HeadlandOne';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height:1.00;
-text-align: justify;
-color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.00;
+    text-align: justify;
+    color: #000000;
 }
 
 /* footer */
 
-.footer{
-    background-image: 
-    url(../images/footer.jpg);
+.footer {
+    background-image:
+        url(../images/footer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 1440px;
-height: 223px;
-    
+    height: 223px;
+
 }
 
-.footer-logo{
+.footer-logo {
     width: 183px;
-height: 70px;
+    height: 70px;
 }
 
-.answeres{
+.answeres {
     width: 665px;
     color: #FFFFFF;
 }
 
-.Cooperation{
+.Cooperation {
     width: 689px;
     color: #FFFFFF;
 }
 
-.TheWayOfWater{
+.TheWayOfWater {
     font-weight: 400;
-font-size: 14px;
-line-height: 1.21;
-text-align: justify;
-color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: justify;
+    color: #FFFFFF;
 }
