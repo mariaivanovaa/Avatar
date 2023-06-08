@@ -90,6 +90,11 @@ a {
     color: #FFFFFF;
 }
 
+.nav-text:hover, :focus {
+    font-weight: 600;
+    color: #94CFFF;
+}
+
 .header-button {
     font-family: 'HeadlandOne';
     font-style: normal;
@@ -161,6 +166,9 @@ a {
     background-image: url(../images/vector-hero.svg);
     background-repeat: no-repeat;
     padding: 20px;
+    width: 152px;
+    height: 40px;
+    margin: 0 auto;
 }
 
 .hero-text-ua {
@@ -197,22 +205,13 @@ a {
     margin-top: 42px;
 }
 
-.section-blockquote {
-    width: 1440px;
-    height: 350px;
-
-}
-
 .blockquote {
     font-weight: 400;
     font-size: 36px;
     line-height: 1.22;
-    text-align: justify;
-    text-align: center;
     color: #0A3853;
     text-align: center;
     padding: 123px 219px 16px 219px;
-    width: 1002px;
     margin: 0 auto;
 }
 
@@ -224,6 +223,16 @@ a {
     text-align: center;
     color: #000000;
 
+}
+
+.author::after{
+    content: '';
+    display: block;
+    background-image: url(../images/icon-with-arrow.svg);
+    width: 400px;
+    height: 120px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 /* trailer */
@@ -262,8 +271,22 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
-    height: 704px;
+    padding: 57px 203px 58px 204px;
+
+}
+
+.knowlege-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.knowledge-item {
+    width: 320px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 24px;
+    padding: 36px;
 }
 
 .knowlege-title {
@@ -272,11 +295,15 @@ a {
     font-weight: 400;
     font-size: 32px;
     line-height: 1.25;
-    text-align: justify;
-    color: #141414;
+    text-align: center;
+    color: #141414; 
+    margin-bottom: 45px;
 }
 
 .knowledge-text-ua {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-family: 'HeadlandOne';
     font-style: normal;
     font-weight: 400;
@@ -286,7 +313,40 @@ a {
     color: #141414;
 }
 
+.knowledge-left::after {
+    content: '';
+    display: block;
+    background-image: url(../images/knowlege-arrow-left.svg);
+    width: 152px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+}
+
+.knowledge-center::after {
+    content: '';
+    display: block;
+    background-image: url(../images/knowlege-arrow.svg);
+    width: 152px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+}
+
+.knowledge-right::after {
+    content: '';
+    display: block;
+    background-image: url(../images/knowlege-arrow-right.svg);
+    width: 152px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+}
+
 .knowledge-text-navi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-family: 'HeadlandOne';
     font-style: normal;
     font-weight: 400;
@@ -294,19 +354,30 @@ a {
     line-height: 1.00;
     text-align: justify;
     color: #000000;
+    
 }
 
 /* footer */
 
 .footer {
-    background-image:
+    display: flex;
+    background-image: linear-gradient(to top, rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)),
         url(../images/footer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
-    height: 223px;
+    padding: 35px 204px;
+}
 
+.footer-left {
+    padding-right: 80px;
+    padding-top:42px;
+    border-right: 2px solid #FFFFFF;
+}
+
+.footer-right {
+   padding-left: 80px;
+   padding-top: 53px;
 }
 
 .footer-logo {
@@ -315,13 +386,13 @@ a {
 }
 
 .answeres {
-    width: 665px;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .Cooperation {
-    width: 689px;
     color: #FFFFFF;
+    margin-bottom: 37px;
 }
 
 .TheWayOfWater {
@@ -329,5 +400,7 @@ a {
     font-size: 14px;
     line-height: 1.21;
     text-align: justify;
+    display: flex;
+    justify-content: center;
     color: #FFFFFF;
 }
