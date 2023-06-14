@@ -6,7 +6,8 @@ body {
 p,
 ul,
 h1,
-h2 {
+h2,
+blockquote {
     padding: 0;
     margin: 0;
 }
@@ -20,6 +21,12 @@ a {
 }
 
 .container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.content{
+    width: 1032px;
     margin: 0 auto;
 }
 
@@ -79,7 +86,9 @@ a {
 .nav-list {
     display: flex;
     justify-content: space-between;
-    padding: 63px 0
+    padding: 63px 0;
+    width: 325px;
+    align-items: center;
 }
 
 .nav-text {
@@ -145,7 +154,13 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 1440px;
-    height: 740px;
+    padding: 180px 0;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-left {
@@ -153,7 +168,6 @@ a {
     font-size: 20px;
     line-height: 1.20;
     color: #FFFFFF;
-    padding: 180px 606px 179px 204px;
 }
 
 .hero-text-navi {
@@ -165,21 +179,21 @@ a {
     display: block;
     background-image: url(../images/vector-hero.svg);
     background-repeat: no-repeat;
-    padding: 20px;
     width: 152px;
     height: 40px;
-    margin: 0 auto;
+    margin-left: 53px;
 }
 
 .hero-text-ua {
     width: 376px;
 }
 
-.hero-right {
-
+.hero-list {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
     width: 50px;
     height: 141px;
-    padding: 300px 204px 299px 0;
 }
 
 .hero-list-item {
@@ -205,24 +219,27 @@ a {
     margin-top: 42px;
 }
 
+.blockquote-section {
+    padding: 75px 0 10px;
+}
+
 .blockquote {
     font-weight: 400;
     font-size: 36px;
     line-height: 1.22;
     color: #0A3853;
     text-align: center;
-    padding: 123px 219px 16px 219px;
-    margin: 0 auto;
 }
 
 .author {
+    display: block;
+    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.08;
-    text-align: justify;
     text-align: center;
     color: #000000;
-
+    margin: 16px 0 8px;
 }
 
 .author::after{
@@ -242,8 +259,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
-    height: 741px;
+    padding: 330px 0;
 }
 
 .trailer-button {
@@ -260,8 +276,8 @@ a {
     background-color: #0B0E66;
     width: 260px;
     height: 80px;
-    margin: 355px 610px 355px 610px;
-    padding: 0;
+    margin: 0 auto;
+    display: block;
 }
 
 /* knowledge */
@@ -285,12 +301,15 @@ a {
     width: 320px;
     height: 240px;
     background: rgba(255, 255, 255, 0.7);
+    padding: 36px 0;
+}
+
+.knowledge-item:nth-child(-n +3) {
     margin-bottom: 24px;
-    padding: 36px;
 }
 
 .knowlege-title {
-    font-family: 'HeadlandOne';
+    font-family: 'HeadlandOne',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -304,12 +323,12 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'HeadlandOne';
+    font-family: 'HeadlandOne', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.00;
-    text-align: justify;
+    text-align: center;
     color: #141414;
 }
 
@@ -347,12 +366,12 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'HeadlandOne';
+    font-family: 'HeadlandOne', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.00;
-    text-align: justify;
+    text-align: center;
     color: #000000;
     
 }
@@ -376,8 +395,26 @@ a {
 }
 
 .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
    padding-left: 80px;
    padding-top: 53px;
+}
+
+.footer-list{
+    width: 680px;
+    margin-bottom: 37px;
+}
+
+.footer-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-list-item:nth-child(1) {
+margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -387,12 +424,28 @@ a {
 
 .answeres {
     color: #FFFFFF;
-    margin-bottom: 16px;
+}
+
+.dashes-one{
+    background-image: url('../images/dashes-one.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 269px;
+    height: 2px;
+    margin: 0 20px;
+}
+
+.dashes-two{
+    background-image: url('../images/dashes-two.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 194px;
+    height: 2px;
+    margin: 0 20px;
 }
 
 .Cooperation {
     color: #FFFFFF;
-    margin-bottom: 37px;
 }
 
 .TheWayOfWater {
