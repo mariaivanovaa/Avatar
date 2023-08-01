@@ -64,7 +64,7 @@
                             твоє тіло залишається,
                             щоб стати частиною Народу.
                             Борись разом з нами!</p>
-                        <button class="hero-button" type="button">
+                        <button class="hero-button" type="button" data-open-form-modal>
                             Приєднатися до <br>клану
                         </button>
                     </div>
@@ -178,6 +178,51 @@
                 </div>
             </footer>
     </div>
+
+<!-- modal-form -->
+
+<div class="backdrop is-hidden" data-form-backdrop>
+    <form class="modal-form">
+        <button type="button" class="modal-button-close" data-close-form-modal>
+            <svg width="14" height="14" class="modal-svg-close">
+                <use href="./images/icons/symbol-defs.svg#icon-modal-button-close"></use>
+            </svg>
+        </button>    
+            <label class="modal-label">Ім’я
+                <input type="text" class="modal-input">
+            </label>
+            <label class="modal-label">Email
+                <input type="email" class="modal-input">
+            </label>
+            <button type="button" class="modal-button" data-open-info-modal>
+                Приєднатися до <br/>
+                клану
+            </button>
+    </form>
+</div>
+
+<!-- modal-info -->
+
+<div class="backdrop is-hidden" data-info-backdrop>
+   <section class="info-modal">
+        <button type="button" class="modal-button-close" data-close-info-modal>
+            <svg width="14" height="14" class="info-modal-svg-close">
+                <use href="./images/icons/symbol-defs.svg#icon-modal-button-close"></use>
+            </svg>
+        </button>
+        <h2 class="info-modal-title">
+            Вітаємо у нашому клані
+        </h2>
+        <p class="info-modal-text">
+            Твій Банші вже в дорозі. <br>
+Скоро побачимось на Пандорі.
+        </p>
+    </section>      
+</div>
+
+
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
