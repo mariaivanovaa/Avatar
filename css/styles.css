@@ -586,6 +586,37 @@ line-height: normal;
 
 }
 
+
+
+/* modal-trailer */
+
+.modal-trailer {
+    width: 1000px;
+    height: 600px;
+    position: fixed;
+    z-index: 100;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/avatar-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 75px 80px;
+}
+
+.modal-title-trailer {
+    color: #FFF;
+    text-align: center;
+    font-family: "Headland One", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;

@@ -43,3 +43,27 @@ document.body.style.overflow = 'visible';
 function logBackdropClickInfo() {
 console.log("Це клік в бекдроп");
 }
+
+
+
+
+
+const refsMov = {
+  openMov: document.querySelector("[data-open-video]"),
+  closeMov: document.querySelector("[data-close-video]"),
+  backdropMov: document.querySelector("[data-video-backdrop]"), };
+  
+  refsMov.openMov.addEventListener("click", showMov);
+  refsMov.closeMov.addEventListener("click", closeMov);
+  refsMov.backdropMov.addEventListener("click", logBackdropClickMov);
+  
+  function showMov(){
+  refsMov.backdropMov.classList.remove("is-hidden");
+  }
+  function closeMov(){
+  refsMov.backdropMov.classList.add("is-hidden");
+  document.body.style.overflow = 'visible';
+  }
+  function logBackdropClickMov() {
+  console.log("Це клік в бекдроп");
+  }

@@ -95,7 +95,7 @@
                     </blockquote>
                 </section>
                 <section class="trailer">
-                    <button class="trailer-button" type="button">Дивитись трейлер</button>
+                    <button class="trailer-button" type="button" data-open-video>Дивитись трейлер</button>
                 </section>
                 <section class="blockquote-section">
                     <blockquote class="blockquote">
@@ -219,6 +219,27 @@
         </p>
     </section>      
 </div>
+
+<!-- modal-trailer -->
+
+<div class="backdrop is-hidden" data-video-backdrop>
+    <section class="modal-trailer">
+        <button type="button" class="modal-button-close" data-close-video>
+            <svg width="20" height="20" class="info-modal-svg-close">
+                <use href="./images/icons/symbol-defs.svg#icon-modal-button-close"></use>
+            </svg>
+        </button>
+        <h2 class="modal-title-trailer">
+            Приємного перегляду!
+        </h2>
+        <iframe width="850" height="450" src="https://www.youtube.com/embed/E8Qe0vS_I3I" title="АВАТАР: ШЛЯХ ВОДИ | Офіційний український трейлер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </section>
+</div>
+
+
+
+
 
 
 
